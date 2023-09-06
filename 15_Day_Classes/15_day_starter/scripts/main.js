@@ -1,5 +1,5 @@
 
-
+/*
 class Person {
   constructor(firstName, lastName, age, country, city) {
     this.firstName = firstName
@@ -102,4 +102,55 @@ console.log(s1.getPersonInfo())
 
 console.log(s2.saySomething())
 console.log(s2.getFullName())
-console.log(s2.getPersonInfo())
+console.log(s2.getPersonInfo()) */
+
+
+
+// Exercise 1
+class Animal {
+  constructor(name, age, color, legs) {
+    this.name = name;
+    this.age= age;
+    this.color = color;
+    this.legs = legs;
+  }
+  getFullname() {
+    return `${this.name}`;
+  }
+  
+  // Exercise 2
+  getAnimalInfo() {
+    const fullInfo = `My pet's name is ${this.name}, It is ${this.age} years old and ${this.color} in color. It also has ${this.legs} legs.`;
+    return fullInfo;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, color, legs) {
+    super(name, age, color, legs);
+  }
+  bark() {
+    console.log('woof woof');
+  }
+
+  // Exercise Level 2
+  getAnimalInfo() {
+    const fullInfo = `My dog's name is ${this.name}, It is ${this.age} years old and ${this.color} in color. It also has ${this.legs} legs.`;
+    return fullInfo;
+  }
+}
+class Cat extends Animal {
+  constructor(name, age, color, legs) {
+    super(name, age, color, legs);
+  }
+  meow() {
+    console.log('meow meow');
+  }
+
+  // Exercise Level 2
+  getAnimalInfo() {
+    const fullInfo = `My cats's name is ${this.name}, It is ${this.age} years old and ${this.color} in color. It also has ${this.legs} legs.`;
+    return fullInfo;
+  }
+}
+
