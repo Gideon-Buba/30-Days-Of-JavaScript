@@ -1,0 +1,53 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/galaxy.gif);
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+}
+
+/* Styles for the .options container */
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Center images */
+img {
+    display: block;
+    margin: 25px auto; 
+}
+
+/* Styles for the .description element */
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+}
+
+/* Styles for the .flex-container */
+.flex-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    margin: 15px 50px; 
+}
+
